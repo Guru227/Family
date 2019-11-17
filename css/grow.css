@@ -23,7 +23,7 @@ header{
   color: #FFFFFFFF;
 }
 .parallax{
-  background-image: url("banayan.jpg");
+  background-image: url("../pictures/banayan.jpg");
   height: 100vh;
   margin: 0;
   padding: 0;

@@ -8,7 +8,7 @@ body{
 	/*font-family: 'Roboto', sans-serif;*/
 	font-family: 'Work Sans', comic-sans;
 	font-weight: 1000;	
-	overflow-x: hidden;	/*scrollbars are hiddden*/
+	overflow-x: hidden;	/*x-scrollbar are hiddden*/
 }
 .container{
 	margin: 0px;
@@ -228,3 +228,4 @@ nav a:hover::before {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+/*end of scroll bar styles*/

@@ -17,7 +17,7 @@ header{
   background-color: transparent;
 }
 .parallax{
-  background-image: url("milky-way.jpg");
+  background-image: url("../pictures/milky-way.jpg");
   height: 100vh;
   margin: 0;
   padding: 0;
