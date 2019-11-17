@@ -1,0 +1,22 @@
+/*sign-up.css*/
+#form-container{
+ 	border-radius: 25px;
+	background-color: hsl(54, 100%, 97%);
+  	padding: 2em;
+  	padding-top: 5em;
+	padding-bottom: 5em;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  	margin-top: 5em; 
+}
+body{
+	background-image: linear-gradient(45deg, rgb(245, 235, 219), rgb(255, 255, 255));
+}
+#log-in-redirect{
+	text-align: center;
+	margin-top: 2em;
+	font-size: 0.75em;
+}
+img{
+	max-width: 20em;
+	max-height: 30em;
+}

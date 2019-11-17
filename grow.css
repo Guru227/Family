@@ -1,0 +1,118 @@
+/*grow.css*/
+/*Over-riding the default navbar settings*/
+/*changing all text color to white*/
+header{
+	background-color: transparent;
+}
+.logo{
+  color: white;
+  font-family: 'Work Sans', comic-sans;
+}
+nav a{
+  color: #FFFFFFFF;
+}
+nav a:hover {
+  color: #FFFFFFFF;
+}
+nav a::before{
+  background-color: #FFFFFFFF;
+}
+header{
+  margin-bottom: 0;
+  background-color: transparent;
+  color: #FFFFFFFF;
+}
+.parallax{
+  background-image: url("banayan.jpg");
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* Creating the parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*font styling*/
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+  font-family: times;
+}
+/*css for the heading text on parallax scroll bar*/
+#top-row{
+  color: #FFFFFFFF;
+  height: 80vh;
+}
+/*seperate font-properties for page welcome*/
+#page-welcome{
+    font-size: 5em;
+    letter-spacing: 0.3em;
+}
+
+body{
+	background: #fff5dc;
+	background-image: linear-gradient(135deg, rgb(245, 235, 219), rgb(255, 255, 255));
+}
+.heading{ /*this is also used for icon desciptions*/
+	font-size: 3em;
+	text-align: center;
+}
+/*css for circular icon frames and icons*/ 
+.inline-pic {
+	position: relative;
+  	border: 0.25em solid #000;
+	border-radius: 50%;
+	box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+	margin: 1em auto;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	will-change: transform, opacity;
+}
+/*this positioning works for most but not for all*/
+i{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	display: inline-block;
+}
+/*custom-positioning*/
+i.zmdi-account-add{
+	left:22px;
+	top:25px;
+}
+#search_icon{
+	left:32px;
+	top:26px;
+}
+
+/*css for tag that goes along with icon*/
+.tag-name{
+	text-align: center;
+}
+/*css for bottom-most tree*/
+.rough-tree{
+	position: relative;
+  	margin: 1em auto;
+  	text-align: center;
+	width: 120px;
+	height: 120px;
+  	will-change: transform, opacity;
+  	padding: 0;
+}
+
+/*to center an abject within a div. Make wrapper = text-align center; and child as display: inline-block;*/
+
+/*css for svg lines to draw tree*/
+line{
+	stroke:rgb(255,0,0);
+  stroke-width:"2";
+}
+/*horizontal lines across the page*/
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}

@@ -1,0 +1,230 @@
+/*gen-style.css*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+*{box-sizing: border-box;} 
+/*This line that border values and padding values are included in the value specified*/ 
+body{		
+	padding:0px;
+	margin:0px;	/*If this is not set, then we will have gap on top*/
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Work Sans', comic-sans;
+	font-weight: 1000;	
+	overflow-x: hidden;	/*scrollbars are hiddden*/
+}
+.container{
+	margin: 0px;
+	border:0px;
+	width: 100%;
+	right:0px;
+	top:0px;
+}
+/* For mobile phones: */
+	.col-sm-1 {width: 8.33%; padding:2vw;}
+ 	.col-sm-2 {width: 16.66%; padding:2vw;}
+	.col-sm-3 {width: 25%; padding:2vw;}
+	.col-sm-4 {width: 33.33%; padding:2vw;}
+	.col-sm-5 {width: 41.66%; padding:2vw;}
+	.col-sm-6 {width: 50%; padding:2vw;}
+	.col-sm-7 {width: 58.33%; padding:2vw;}
+	.col-sm-8 {width: 66.66%; padding:2vw;}
+	.col-sm-9 {width: 75%; padding:2vw;}
+	.col-sm-10 {width: 83.33%; padding:2vw;}
+	.col-sm-11 {width: 91.66%; padding:2vw;}
+	.col-sm-12 {width: 100%; padding:2vw;}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+	.col-md-1 {width: 8.33%;padding:2vw;}
+	.col-md-2 {width: 16.66%;padding:2vw;}
+	.col-md-3 {width: 25%;padding:2vw;}
+	.col-md-4 {width: 33.33%;padding:2vw;}
+	.col-md-5 {width: 41.66%;padding:2vw;}
+	.col-md-6 {width: 50%;padding:2vw;}
+	.col-md-7 {width: 58.33%;padding:2vw;}
+	.col-md-8 {width: 66.66%;padding:2vw;}
+	.col-md-9 {width: 75%; padding:2vw;}
+	.col-md-10 {width: 83.33%;padding:2vw;}
+	.col-md-11 {width: 91.66%;padding:2vw;}
+	.col-md-12 {width: 100%;padding:2vw;}
+}
+@media only screen and (min-width: 992px) {
+  /* For desktop: */
+	.col-lg-1 {width: 8.33%; padding:2vw;}
+	.col-lg-2 {width: 16.66%; padding:2vw;}
+	.col-lg-3 {width: 25%; padding:2vw;}
+	.col-lg-4 {width: 33.33%; padding:2vw;}
+	.col-lg-5 {width: 41.66%; padding:2vw;}
+	.col-lg-6 {width: 50%; padding:2vw;}
+	.col-lg-7 {width: 58.33%; padding:2vw;}
+	.col-lg-8 {width: 66.66%; padding:2vw;}
+	.col-lg-9 {width: 75%; padding:2vw;}
+	.col-lg-10 {width: 83.33%; padding:2vw;}
+	.col-lg-11 {width: 91.66%; padding:2vw;}
+	.col-lg-12 {width: 100%; padding:2vw;}
+}
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+	.col-xl-1 {width: 8.33%; padding:2vw;}
+	.col-xl-2 {width: 16.66%; padding:2vw;}
+	.col-xl-3 {width: 25%; padding:2vw;}
+	.col-xl-4 {width: 33.33%; padding:2vw;}
+	.col-xl-5 {width: 41.66%; padding:2vw;}
+	.col-xl-6 {width: 50%; padding:2vw;}
+	.col-xl-7 {width: 58.33%; padding:2vw;}
+	.col-xl-8 {width: 66.66%; padding:2vw;}
+	.col-xl-9 {width: 75%; padding:2vw;}
+	.col-xl-10 {width: 83.33%; padding:2vw;}
+	.col-xl-11 {width: 91.66%; padding:2vw;}
+	.col-xl-12 {width: 100%; padding:2vw;}
+}
+.row{
+	margin: 0.5vw;
+	padding: 0.5vw;
+	width: 100%;
+	/*all of these are flexbox properties*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;	/*end*/
+	/*text-justify*/
+	text-align: justify;
+}
+.heading1{
+  font-weight: bold;
+  color: #222;
+  font-size: 2.5em;
+  margin-bottom: 1vw;
+}
+input{
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 30px;
+  box-sizing: border-box;
+  float: left; 
+}
+.form-group{ 
+	margin-bottom: 3em;
+	max-height: 50px;
+}
+.form-group i{
+	position: relative;
+	top: 23px;
+	left: 7px;
+}
+/*css for submit button*/
+.form-submit {
+  display: inline-block;
+  background: #6dabe4;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer; 
+}
+.form-submit:hover {
+    background: #4292dc; 
+}
+
+
+.button{
+  display: inline-block;
+  background: #6dabe4;
+  color: #fff;
+  border-bottom: none;
+  width: auto;
+  padding: 15px 39px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-top: 25px;
+  cursor: pointer; 
+}
+
+
+/*navbar styles*/
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+header {
+  background: #c19a5b73;
+  margin-bottom: 3em;
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.logo {
+  float: left;
+  padding: 0px 0;
+}
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 24px;
+
+  position: relative;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav a:hover {
+  color: #000;
+}
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #000;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+/*end of nav bar styles*/
+
+
+
+
+/*Scroll bar styles*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
