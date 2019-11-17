@@ -1,5 +1,8 @@
 /*you.css*/
 /*local navbar css over-riding*/
+a{
+  color: #000;
+}
 .logo{
   color: white;
 }
@@ -54,7 +57,11 @@ header{
   text-align: center;
   width: 120px;
   height: 120px;
-  will-change: transform, opacity;
+  transition: transform 0.25s; 
+}
+.inline-pic:hover{
+  transform: scale(1.25);
+  opacity: 0.75;
 }
 /*this positioning works for most but not for all*/
 i{
@@ -96,6 +103,9 @@ line{
   stroke:rgb(255,0,0);
   stroke-width:"2";
 }
+svg{
+  visibility: hidden;
+}
 /*horizontal lines across the page*/
 hr{
     display: block;
@@ -105,3 +115,4 @@ hr{
     margin: 1em 0;
     padding: 0;
 }
+

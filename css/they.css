@@ -1,4 +1,7 @@
 /*they.css*/
+a{
+	color: #000;
+}
 header{
 	background: url(../pictures/tile_texture2.jpg);
 }
@@ -22,6 +25,11 @@ body{
 	width: 120px;
 	height: 120px;
 	will-change: transform, opacity;
+	transition: transform 0.25s; 
+}
+.inline-pic:hover{
+  transform: scale(1.25);
+  opacity: 0.75;
 }
 /*this positioning works for most but not for all*/
 i{

@@ -1,44 +1,38 @@
 //you.js
+//returns true if element passed as parameter is in viewport
 
-// Detect request animation frame
-var scroll = window.requestAnimationFrame; 
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+let isInViewport = function(ele){
+  let rect = ele.getBoundingClientRect();
+  x = rect.left;
+  y = rect.top;
+  w = rect.right - rect.left;
+  h = rect.bottom - rect.top;
 
-function loop() {
-
-    Array.prototype.forEach.call(elementsToShow, function(element){
-      if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
-      } else {
-        element.classList.remove('is-visible');
-      }
-    });
-
-    scroll(loop);
+  //alert (" Left: " + x + "\n Top: " + y + "\n Width: " + w + "\n Height: " + h);
+  return 1;
 }
 
-// Call the loop for the first time
-loop();
 
-//Function from: http://stackoverflow.com/a/7557433/274826
-function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
+
+function drawSvg_head(){
+  let ele = document.querySelectorAll('svg')[0];
+  //svglist.forEach(function(ele){
+    if (isInViewport(ele)) {
+      setInterval(drawSvg(ele), 3000);
   }
-  var rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
+  //});
 }
 
+//draw svg
+function drawSvg(ele){
+  console.log(1);
+  ele.setAttribute("style", "visibility: visible");
+}
+
+//draw svg1 if ele svg1 in viewport
+
+
+  window.addEventListener('scroll', drawSvg_head, false);
 
 
 //Chat-form events
