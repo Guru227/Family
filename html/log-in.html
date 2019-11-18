@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>Family - Login</title>
-	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/gen-styles.css">
 	<link rel="stylesheet" type="text/css" href="../css/log-in.css">
 	<!-- Font Icon -->
@@ -19,9 +18,7 @@
 
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="../index.html">Home</a></li>
         </ul>
       </nav>
     </div>
@@ -42,28 +39,53 @@
 	    		<div class="heading1">
 	    			Log-in
 	    		</div>
+
+	    		<div class="row">
 	    		<div class="form-group">
 	                <label for="username">
-	                	<i class="zmdi zmdi-account material-icons-name"></i>
+                	<i class="zmdi zmdi-account material-icons-name"></i>
 	                </label>
 	                <input type="text" name="name" id="name" placeholder="Your Username"/>
 	            </div>
+	        	</div>
+
+	            <div class="row">
 	            <div class="form-group">
 	                <label for="pass">
-	                	<i class="zmdi zmdi-lock"></i>
+                	<i class="zmdi zmdi-lock"></i>
 	                </label>
 	                <input type="password" name="pass" id="pass" placeholder="Password"/>
 	            </div>
-	            <div class="col-md-6 form-group form-button">
+	        	</div>
+
+	            <div class="row">
+	            	<div class="col-md-2"></div>
+	           		<div class="col-md-8">
+	           		<div class="form-group form-button">
+	           			<div class="row">
                 	<input type="submit" name="signup" id="signup" class="form-submit" value="Log In"/>
+                		</div>
+					</div>
+					</div>
+					<div class="col-md-2"></div>
 				</div>
-				<div id="sign-up-redirect">
-            		<a href="../html/sign-up.html" id="hlink-signup"> Don't have an account?</a>
+
+
+				<div class="row">
+					<div class="col-md-1"></div>
+	           		<div class="col-md-10">
+           			<div class="sign-up-redirect">
+            		<a href="../html/sign-up.html" id="hlink-signup">
+            		<div class="row"> Don't have an account?</div></a> 
+					</div>
+					</div>
+					<div class="col-md-1"></div>
     			</div>
+
 			</div>
     	</div>
     <div class="col-md-3"></div>
-	
+	</div>
 
 </body>
 </html>

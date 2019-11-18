@@ -103,9 +103,18 @@ input{
   box-sizing: border-box;
   float: left; 
 }
+#form-container{
+ 	border-radius: 25px;
+	background-color: hsl(54, 100%, 97%);
+  	padding: 2em;
+  	padding-top: 5em;
+	padding-bottom: 5em;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+  	margin-top: 5em; 
+}
 .form-group{ 
-	margin-bottom: 3em;
 	max-height: 50px;
+	width: 100%;
 }
 .form-group i{
 	position: relative;
@@ -115,6 +124,7 @@ input{
 /*css for submit button*/
 .form-submit {
   display: inline-block;
+  text-align: center;
   background: #6dabe4;
   color: #fff;
   border-bottom: none;

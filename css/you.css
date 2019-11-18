@@ -103,8 +103,21 @@ line{
   stroke:rgb(255,0,0);
   stroke-width:"2";
 }
-svg{
+/*svg{
   visibility: hidden;
+}*/
+.svg-container{
+  overflow: hidden;
+  -webkit-animation: reveal 4s ease;
+  -webkit-animation-fill-mode: backwards;
+}
+@-webkit-keyframes reveal{
+  from {height: 0px;}
+  to {height: 100%;}
+}
+@keyframes reveal{
+  from {height: 0px;}
+  to {height: 100%;}
 }
 /*horizontal lines across the page*/
 hr{

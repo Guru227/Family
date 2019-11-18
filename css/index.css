@@ -1,0 +1,167 @@
+/*index.css*/
+@font-face {
+  font-family: 'quote-font';
+  src: URL('AdineKirnberg-Script.ttf') format('truetype');
+}
+a{
+	color: #000;
+}
+header{
+	background: url(../pictures/tile_texture2.jpg);
+}
+
+body{
+
+	background-image: linear-gradient(135deg, rgb(245, 235, 219), rgb(255, 255, 255));
+	
+}
+a{
+	text-decoration: none;
+}
+/*css for the heading text on parallax scroll bar*/
+#top-row{
+  color: #000;
+  height: 80vh;
+}
+/*css for quotes in page welcome*/
+#page-welcome-quote{
+    font-size: 2em;
+    letter-spacing: 0.25em;
+    color:#FFFFFF;
+}
+/*css for CTA line*/
+#cta{
+	display: inline-block;
+	font-size: 2vw;
+	font-weight:100;
+	color: #FFF;
+	transition: transform 0.25s;
+	text-decoration: none;
+}
+#cta:hover{
+  transform: scale(1.25);
+  opacity: 0.75;
+}
+/*css for heading of testimonials*/
+#testimonial-heading{
+	letter-spacing: 0.2em;
+ 	word-spacing: 0.3em;
+	text-align: left;
+}
+/*css for heading of About Us*/
+#about-us-heading{
+	letter-spacing: 0.2em;
+ 	word-spacing: 0.3em;
+	text-align: left;
+}
+.heading{ /*this is also used for icon desciptions*/
+	font-size: 3em;
+	text-align: center;
+}
+.quote-even{	/*this is used only for testimonial quotes in even positions*/
+	font-family: 'quote-font';
+	font-size: 3em;
+	font-weight: 400;
+	text-align: right;
+}
+.quote-odd{	/*this is used only for testimonial quotes in even positions*/
+	font-family: 'quote-font';
+	font-size: 3em;
+	font-weight: 400;
+}
+.parallax{
+  background-image: url("../pictures/blue-mountains.jpg");
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /*text-formatting*/
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+  /* Creating the parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*css for circular icon frames and icons*/ 
+.inline-pic {
+	position: relative;
+  	border: 0.25em solid #000;
+	border-radius: 50%;
+	box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+	margin: 1em auto;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	transition: transform 0.25s; 
+	object-fit: contain;
+}
+.inline-pic:hover{
+  transform: scale(1.25);
+  opacity: 0.75;
+}
+/*this positioning works for most but not for all*/
+i{
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	display: inline-block;
+}
+/*custom-positioning*/
+i.zmdi-male-alt, i.zmdi-female{
+	left:50px;
+	top:50px;
+}
+i.zmdi-account, i.zmdi-calendar, i.zmdi-city{
+	left:34px;
+}
+i.zmdi-facebook{
+	left:40px;
+}
+
+/*css for tag that goes along with icon*/
+.tag-name{
+	text-align: center;
+}
+/*to center an abject within a div. Make wrapper = text-align center; and child as display: inline-block;*/
+
+/*css for circular dev-pic frames*/ 
+.dev-pic{
+	width: 150px;
+	height: 150px;
+	box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+	top: 0px;
+	left: 0px;
+	/*centering an image*/
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	/*end of centering image*/
+	border: 1em auto;
+	z-index: 7;
+	border-radius: 50%;
+}
+/*
+.hover-zoom:hover{
+  transform: scale(1.25);
+  opacity: 0.75;
+}*/
+
+/*css for back to top div*/
+#toTop{
+    padding: 0.3em;
+    position: fixed;
+    bottom: 0.1vw;
+    right: 0.1vw;
+    display: none;
+
+    font-size: 1vw;
+	font-weight:100;
+	transition: transform 0.25s;
+	text-decoration: none;
+}
+
+#toTop:hover{
+  transform: scale(1.1);
+  opacity: 0.75;
+}
