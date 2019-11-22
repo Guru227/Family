@@ -1,77 +1,51 @@
 /*they.css*/
-a{
-	color: #000;
-}
+							/*universally applied styles*/
 header{
 	background: url(../pictures/tile_texture2.jpg);
 }
-
+/
 body{
-	background: #fff5dc;
 	background-image: linear-gradient(135deg, rgb(245, 235, 219), rgb(255, 255, 255));
 }
-.heading{ /*this is also used for icon desciptions*/
+.section-heading{
 	font-size: 3em;
 	text-align: center;
 }
-/*css for circular icon frames and icons*/ 
-.inline-pic {
+
+                                  	/*svg*/
+/*css for tree at the bottom*/
+.tree{
+    /*position and dimensions*/
 	position: relative;
-  	border: 0.25em solid #000;
-	border-radius: 50%;
-	box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-	margin: 1em auto;
-	text-align: center;
-	width: 120px;
-	height: 120px;
-	will-change: transform, opacity;
-	transition: transform 0.25s; 
+    width: 120px;
+    height: 120px;
+    margin: 1em auto;
+    text-align: center;
+    will-change: transform, opacity;
+    padding: 0;
 }
-.inline-pic:hover{
-  transform: scale(1.25);
-  opacity: 0.75;
-}
-/*this positioning works for most but not for all*/
-i{
-	position: absolute;
-	left: 30px;
-	top: 30px;
-	display: inline-block;
-}
-/*custom-positioning*/
-i.zmdi-male-alt, i.zmdi-female{
-	left:50px;
-	top:50px;
-}
-i.zmdi-account, i.zmdi-calendar, i.zmdi-city{
-	left:34px;
-}
-i.zmdi-facebook{
-	left:40px;
-}
-
-/*css for tag that goes along with icon*/
-.tag-name{
-	text-align: center;
-}
-/*css for bottom-most tree*/
-.rough-tree{
-	position: relative;
-  	margin: 1em auto;
-  	text-align: center;
-	width: 120px;
-	height: 120px;
-  	will-change: transform, opacity;
-  	padding: 0;
-}
-
-/*to center an abject within a div. Make wrapper = text-align center; and child as display: inline-block;*/
-
-/*css for svg lines to draw tree*/
+/*css for svg lines of tree*/
 line{
-	stroke:rgb(255,0,0);
+  stroke:rgb(255,0,0);
   stroke-width:"2";
 }
+/*animation of tree rendering*/
+.svg-container{
+  overflow: hidden;
+  -webkit-animation: reveal 4s ease;
+  -webkit-animation-fill-mode: backwards;
+}
+@-webkit-keyframes reveal{
+  from {width: 0px;}
+  to {width: 100%;}
+}
+@keyframes reveal{
+  from {width: 0px;}
+  to {width: 100%;}
+}
+                                  /*end of svg*/
+
+
 /*horizontal lines across the page*/
 hr{
     display: block;

@@ -4,7 +4,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>Family - They Page</title>
-	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/gen-styles.css">
     <link rel="stylesheet" type="text/css" href="../css/they.css">
     <!-- Font Icon -->
@@ -13,7 +12,7 @@
 <body>
     <!-- CSS Navbar-->
     <header>
-    <div class="container">
+    <div class="nav-container">
       <h1 class="logo">Family</h1>
 
       <nav>
@@ -36,7 +35,7 @@
             <div class="row">
                 <!--title-->
                 <div class="col-md-6">
-                <div class="heading">Personal Details</div>
+                <div class="section-heading">Personal Details</div>
                 </div>
                 
                 <!--icon 1-->
@@ -80,7 +79,7 @@
     <!-- row 2-->
     <div class="row">
         <div class="col-md-12">
-        <div class="heading">Their Social Media Handles</div>  
+        <div class="section-heading">Their Social Media Handles</div>  
         </div>
     </div><!--end of row 2-->
 
@@ -155,14 +154,14 @@
     <div class="row">
         <!--Row's title-->    
         <div class="col-md-3">
-        <div class="heading">Their Parents</div>
+        <div class="section-heading">Their Parents</div>
         </div>
 
         <!--Parent icons-->
         <div class="row col-md-6" >
             <!--Father icon-->
             <div class="col-md-6"> 
-            <div class="col-md-12 rough-tree"> 
+            <div class="col-md-12 tree"> 
             <i class="zmdi zmdi-male-alt zmdi-hc-4x"></i>
             </div>
             <div class="tag-name">Kasivinayagam</div>
@@ -170,7 +169,7 @@
 
             <!--Mother icon-->
             <div class="col-md-6">
-            <div class="col-md-12 rough-tree"> 
+            <div class="col-md-12 tree"> 
             <i class="zmdi zmdi-female zmdi-hc-4x"></i>
             </div>
             <div class="tag-name">Usha</div>
@@ -182,6 +181,7 @@
     </div>
     
     <!--row 4, but is not class="row"-->
+    <div id="svg1">
     <svg height="5em" width="100vw">
         <!--Middle line-->
         <line x1="49%" y1="25%" x2="49%" y2="100%"/>
@@ -191,10 +191,11 @@
         <!--top-right line to mum-->
         <line x1="49%" y1="25%" x2="63%" y2="25%"/>
         <line x1="63%" y1="25%" x2="63%" y2="0%"/>
-        <!--bottom left line that goes to nithin and then down-->
+        <!--bottom left line that goes to sibling and then down-->
         <line x1="49%" y1="75%" x2="17%" y2="75%"/>
         <line x1="17%" y1="75%" x2="17%" y2="100%"/>
     </svg>
+    </div>
 
 
     <!--row 5-->  
@@ -203,7 +204,7 @@
     <div class="row col-md-9">
         <!--The sibling 1 icon-->
         <div class="col-md-5"> 
-        <div class="col-md-12 rough-tree"> 
+        <div class="col-md-12 tree"> 
         <i class="zmdi zmdi-male-alt zmdi-hc-4x"></i>
         </div>
         <div class="tag-name">Nithinshankar</div>
@@ -211,7 +212,7 @@
         
         <!--The sibling 2 icon-->
         <div class="col-md-5"> 
-        <div class="col-md-12 rough-tree"> 
+        <div class="col-md-12 tree"> 
         <i class="zmdi zmdi-male-alt zmdi-hc-4x"></i>
         </div>
         <div class="tag-name">Gurusankar</div>
@@ -223,12 +224,13 @@
 
     <!--row title-->
     <div class="col-md-3">
-        <div class="heading">Their siblings and Him/Her</div>
+        <div class="section-heading">Their siblings and Him/Her</div>
     </div>
 
     </div>
 
     <!--row 6, but not class="row"-->
+    <div id="svg2">
     <svg height="5em" width="100vw">
         <!--Middle line-->
         <line x1="49%" y1="0%" x2="49%" y2="50%"/>
@@ -237,13 +239,14 @@
         <!--bottom right line that goes to dude/dudess that just drops down-->
         <line x1="70%" y1="50%" x2="70%" y2="100%"/>
     </svg>
+    </div>
 
 
     <!--row 7-->  
     <div class="row">
         <!--row title-->
         <div class="col-md-3">
-        <div class="heading">Their Children</div>
+        <div class="section-heading">Their Children</div>
         </div><!--end of row title-->
 
         <!--children icons-->
@@ -253,7 +256,7 @@
 
             <!--child-->
             <div class="col-md-5"> 
-            <div class="col-md-12 rough-tree"> 
+            <div class="col-md-12 tree"> 
             <i class="zmdi zmdi-male-alt zmdi-hc-4x"></i>
             </div>
             <div class="tag-name">Dude/Dudess</div>
@@ -263,6 +266,6 @@
             <div class="col-md-2"></div>
         </div><!--end of children icons-->
     </div><!--end of row 7-->
-    <script type="javascript" src="you.js"></script>
+    <script src="../js/they.js"></script>
 </body>
 </html>

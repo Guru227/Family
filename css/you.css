@@ -1,7 +1,26 @@
 /*you.css*/
-/*local navbar css over-riding*/
-a{
-  color: #000;
+                            /*css for parallax scroll*/
+/*navbar is present in this container*/
+.parallax{
+  background-image: url("../pictures/milky-way.jpg");
+  /*position and dimensions*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Creates the parallax effect */
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  /*text-formatting*/
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;  
+}
+/*over-riding a few css properties like color and background of navbar*/
+header{
+  margin-bottom: 0;
+  background-color: transparent;
 }
 .logo{
   color: white;
@@ -15,110 +34,63 @@ nav a:hover {
 nav a::before{
   background-color: #FFFFFFFF;
 }
-header{
-  margin-bottom: 0;
-  background-color: transparent;
-}
-.parallax{
-  background-image: url("../pictures/milky-way.jpg");
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  /*text-formatting*/
-  letter-spacing: 0.2em;
-  word-spacing: 0.3em;
-  /* Creating the parallax effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 /*css for the heading text on parallax scroll bar*/
 #top-row{
   color: #FFFFFFFF;
   height: 80vh;
 }
-.heading{ /*this is also used for icon desciptions*/
-  font-size: 3em;
-  text-align: center;
-}
 /*seperate font-properties for page welcome*/
 #page-welcome{
     font-size: 4em;
     letter-spacing: 0.25em;
+    text-align: center;
 }
-/*css for circular icon frames and icons*/ 
-.inline-pic {
-  position: relative;
-    border: 0.25em solid #000;
-  border-radius: 50%;
-  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-  margin: 1em auto;
-  text-align: center;
-  width: 120px;
-  height: 120px;
-  transition: transform 0.25s; 
-}
-.inline-pic:hover{
-  transform: scale(1.25);
-  opacity: 0.75;
-}
-/*this positioning works for most but not for all*/
-i{
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  display: inline-block;
-}
-/*custom-positioning*/
-i.zmdi-male-alt, i.zmdi-female{
-  left:50px;
-  top:50px;
-}
-i.zmdi-account, i.zmdi-calendar, i.zmdi-city{
-  left:34px;
-}
-i.zmdi-facebook{
-  left:40px;
-}
-
-/*css for tag that goes along with icon*/
-.tag-name{
-  text-align: center;
-}
-/*css for bottom-most tree*/
-.rough-tree{
-  position: relative;
+                      /*end of css for parallax scroll*/
+                                    
+                                    /*svg*/
+/*css for tree at the bottom*/
+.tree{
+    /*position and dimensions*/
+    position: relative;
+    width: 120px;
+    height: 120px;
     margin: 1em auto;
     text-align: center;
-  width: 120px;
-  height: 120px;
     will-change: transform, opacity;
     padding: 0;
 }
-/*to center an abject within a div. Make wrapper = text-align center; and child as display: inline-block;*/
-
-/*css for svg lines to draw tree*/
+/*css for svg lines of tree*/
 line{
   stroke:rgb(255,0,0);
   stroke-width:"2";
 }
-/*svg{
-  visibility: hidden;
-}*/
+/*animation of tree rendering*/
 .svg-container{
   overflow: hidden;
   -webkit-animation: reveal 4s ease;
   -webkit-animation-fill-mode: backwards;
 }
 @-webkit-keyframes reveal{
-  from {height: 0px;}
-  to {height: 100%;}
+  from {width: 0px;}
+  to {width: 100%;}
 }
 @keyframes reveal{
-  from {height: 0px;}
-  to {height: 100%;}
+  from {width: 0px;}
+  to {width: 100%;}
 }
+                                  /*end of svg*/
+
+
+/*css for section headers*/
+.section-heading{
+  /*text-formatiing*/
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  word-spacing: 0.3em;
+  text-align: left;
+}
+
 /*horizontal lines across the page*/
 hr{
     display: block;

@@ -6,13 +6,13 @@
 	<title>Family - Sign-up</title>
   <link rel="stylesheet" type="text/css" href="../css/gen-styles.css">
   <link rel="stylesheet" type="text/css" href="../css/sign-up.css">
-	<!-- Font Icon -->
+  <!-- Font Icon -->
   <link rel="stylesheet" href="../material-design-iconic-font/css/material-design-iconic-font.min.css">
 </head>
 <body>
     <!-- CSS Navbar-->
     <header>
-    <div class="container">
+    <div class="nav-container">
       <h1 class="logo">Family</h1>
 
       <nav>
@@ -39,7 +39,7 @@
             <!--left half of form-->
         	<div class="col-md-6">
                 <!--Form heading-->
-        		<div class="row heading1">Sign Up</div>
+        		<div class="row form-heading">Sign Up</div>
                 
                 <!--form row 1-->
                 <div class="row">
@@ -57,7 +57,7 @@
                     <label for="email">
                 	<i class="zmdi zmdi-email"></i>
                     </label>
-                    <input type="email" name="email" id="email" placeholder="Your Email"/>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"/>
                 </div>
                 </div><!--end of form row 2-->
 
@@ -67,7 +67,7 @@
                     <label for="pass">
                 	<i class="zmdi zmdi-lock"></i>
                     </label>
-                    <input type="password" name="pass" id="pass" placeholder="Password"/>
+                    <input class="" type="password" name="pass" id="pass" placeholder="Password"/>
                 </div>
                 </div><!--end of form row 3-->
 
@@ -80,6 +80,11 @@
                     <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
                 </div>
                 </div><!--end of form row 4-->
+
+                <!--temp row-->
+                <div class="row">
+                    <div class="col-md-12" id="message"></div>
+                </div>
                 
                 <!--form row 5-->
                 <div class="row">
@@ -87,9 +92,11 @@
                 <div class="col-md-1"></div>
                 
                 <!--submit button-->
+                <div class="row">
                 <div class="col-md-10">
-                    <div class="form-group form-button">
+                    <div class="form-group">
                     <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                    </div>
                 </div>
                 </div><!--end of submit button-->
 
@@ -120,5 +127,7 @@
         <!--outer padding-->
         <div class="col-md-2"></div>	
     </div><!--end of form region-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src ="../js/sign-up.js"></script>
 </body>
 </html>
