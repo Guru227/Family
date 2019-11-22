@@ -41,68 +41,70 @@
                 <!--Form heading-->
         		<div class="row form-heading">Sign Up</div>
                 
-                <!--form row 1-->
-                <div class="row">
-        		<div class="form-group">
-                    <label for="name">
-                	<i class="zmdi zmdi-account material-icons-name"></i>
-                    </label>
-                    <input type="text" name="name" id="name" placeholder="Your Name"/>
-                </div>
-                </div><!--end of form row 1-->
-
-                <!--form row 2-->
-                <div class="row">
-                <div class="form-group">
-                    <label for="email">
-                	<i class="zmdi zmdi-email"></i>
-                    </label>
-                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"/>
-                </div>
-                </div><!--end of form row 2-->
-
-                <!--form row 3-->
-                <div class="row">
-                <div class="form-group">
-                    <label for="pass">
-                	<i class="zmdi zmdi-lock"></i>
-                    </label>
-                    <input class="" type="password" name="pass" id="pass" placeholder="Password"/>
-                </div>
-                </div><!--end of form row 3-->
-
-                <!--form row 4-->
-                <div class="row">
-                <div class="form-group">
-                    <label for="re-pass">
-                	<i class="zmdi zmdi-lock-outline"></i>
-                    </label>
-                    <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                </div>
-                </div><!--end of form row 4-->
-
-                <!--temp row-->
-                <div class="row">
-                    <div class="col-md-12" id="message"></div>
-                </div>
-                
-                <!--form row 5-->
-                <div class="row">
-                <!--padding-->
-                <div class="col-md-1"></div>
-                
-                <!--submit button-->
-                <div class="row">
-                <div class="col-md-10">
-                    <div class="form-group">
-                    <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                <form method="POST" action="../php/signup/signup.php">
+                    <!--form row 1-->
+                    <div class="row">
+            		<div class="form-group">
+                        <label for="name">
+                    	<i class="zmdi zmdi-account material-icons-name"></i>
+                        </label>
+                        <input type="text" name="name" id="name" placeholder="Username"/>
                     </div>
-                </div>
-                </div><!--end of submit button-->
+                    </div><!--end of form row 1-->
 
-                <!--padding-->
-                <div class="col-md-1"></div>
-                </div><!--end of row 5-->
+                    <!--form row 2-->
+                    <div class="row">
+                    <div class="form-group">
+                        <label for="email">
+                    	<i class="zmdi zmdi-email"></i>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"/>
+                    </div>
+                    </div><!--end of form row 2-->
+
+                    <!--form row 3-->
+                    <div class="row">
+                    <div class="form-group">
+                        <label for="pass">
+                    	<i class="zmdi zmdi-lock"></i>
+                        </label>
+                        <input class="" type="password" name="pass" id="pass" placeholder="Password"/>
+                    </div>
+                    </div><!--end of form row 3-->
+
+                    <!--form row 4-->
+                    <div class="row">
+                    <div class="form-group">
+                        <label for="re-pass">
+                    	<i class="zmdi zmdi-lock-outline"></i>
+                        </label>
+                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                    </div>
+                    </div><!--end of form row 4-->
+
+                    <!--temp row-->
+                    <div class="row">
+                        <div class="col-md-12" id="message"></div>
+                    </div>
+                    
+                    <!--form row 5-->
+                    <div class="row">
+                    <!--padding-->
+                    <div class="col-md-1"></div>
+                    
+                    <!--submit button-->
+                    <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                        </div>
+                    </div>
+                    </div><!--end of submit button-->
+
+                    <!--padding-->
+                    <div class="col-md-1"></div>
+                    </div><!--end of row 5-->
+                </form>
             </div><!--end of left half of form-->
 
             <!--right half of form (containing the picture)-->

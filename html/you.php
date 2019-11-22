@@ -1,5 +1,5 @@
 <?php
-	include("../php/login/config.php");
+	include("../php/config.php");
 	session_start();
 
 	//cannot directly use session vaariable in sql string
@@ -227,7 +227,7 @@
             <i class="zmdi zmdi-male-alt zmdi-hc-4x"></i>
             </div>
             <?php
-            echo '<div class="tag-name">'.$relationshipArray['username'].'</div>'
+            echo '<div class="tag-name">'.$relationshipArray['name'].'</div>'
             ?>
         </div>
         <div class="col-md-2"></div>
